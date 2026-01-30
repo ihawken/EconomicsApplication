@@ -77,12 +77,7 @@ namespace EconomicsNEA
 
 
                     
-                    string insertQuery = "INSERT INTO Users (Username, Password) VALUES (@username, @password)";
-                    SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
-                    insertCmd.Parameters.Add("@username", SqlDbType.NVarChar, 50).Value = username;
-                    insertCmd.Parameters.Add("@password", SqlDbType.NVarChar, 50).Value = password;
-                    insertCmd.ExecuteNonQuery();
-                    MessageBox.Show("User registered successfully!");
+                    
                     
                      this.Close(); // Closes the sign up window after person has been added 
                 }
