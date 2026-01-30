@@ -77,9 +77,9 @@ namespace EconomicsNEA
 
 
                     
-                    
-                    
-                     this.Close(); // Closes the sign up window after person has been added 
+                    MessageBox.Show("Account Created Successfully! Please log in with your new credentials.");
+
+                    this.Close(); // Closes the sign up window after person has been added 
                 }
 
 
